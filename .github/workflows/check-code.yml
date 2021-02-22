@@ -1,0 +1,14 @@
+name: Check code
+on:
+  push:
+    branches:
+      - "main"
+jobs:
+  check-code:
+    name: Check Code
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout the repo
+        uses: actions/checkout@v2
+      - run: npm install
+      - run: npm run ci
