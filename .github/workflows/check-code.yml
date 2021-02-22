@@ -1,11 +1,13 @@
-name: Check code
+name: Check code when push
 
 on:
   push:
-    branches: "main"
+    branches:
+      - "main"
+
 jobs:
   check-code:
-    name: Check Code
+    name: Check code
     runs-on: ubuntu-latest
     steps:
       - name: Checkout the repo
