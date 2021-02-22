@@ -1,8 +1,8 @@
 name: Check code
+
 on:
   push:
-    branches:
-      - "main"
+    branches: "main"
 jobs:
   check-code:
     name: Check Code
